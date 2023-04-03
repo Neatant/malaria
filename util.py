@@ -6,7 +6,7 @@ from keras.models import load_model
 from tensorflow.keras.preprocessing import image
 from keras.applications.vgg19 import preprocess_input
 
-model_path = "model_vgg19.h5"
+model_path = "ap4Malariamodel_vgg19.h5"
 model = load_model(model_path)
 
 def predict(image_file):
@@ -23,4 +23,4 @@ def predict(image_file):
     if prediction[0][0] < prediction[0][1]:
         return {"result": "Uninfected"}
     else:
-        return {"result": "Parasitized"}
+        return {"result": "Parasite"}
