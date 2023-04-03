@@ -6,7 +6,7 @@ from keras.models import load_model
 from tensorflow.keras.preprocessing import image
 from keras.applications.vgg19 import preprocess_input
 
-model_path = "ap4Malariamodel_vgg19.h5"
+model_path = "ccMalariamodel_vgg19.h5"
 model = load_model(model_path)
 
 def predict(image_file):
