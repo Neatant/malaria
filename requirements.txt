@@ -7,3 +7,4 @@ pydantic
 python-multipart
 Pillow==8.3.2
 matplotlib
+tensorflow_model_optimization
